@@ -7,10 +7,10 @@ Example video showing tracking of a Six-Minute Walking Test Patient:
 <p align="center"><img src="./app/yolov4_deepsort/data/helpers/6mwt_demo.gif"\></p>
 
 ## Deploy with Docker
-    ```sh
-    docker build -t [image name] .
-    docker run -d --name [container name] -p [host port:container port] [image name]
-    ```
+```sh
+docker build -t [image name] .
+docker run -d --name [container name] -p [host port:container port] [image name]
+```
 
 ## Downloading Official YOLOv4 Pre-trained Weights
 The object tracker uses YOLOv4 to make the object detections, which deep sort then uses to track. There exists an official pre-trained YOLOv4 object detector model that is able to detect 80 classes. For easy demo purposes we will use the pre-trained weights for our tracker.
