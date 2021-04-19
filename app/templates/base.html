@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">    
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    {% block head %}
+    <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title%}{% endblock title%} -titleBlock</title>
+    {% endblock head %} -->
+<!-- </head>
+<body> -->
+    
+    <!--<h1>Welcome to the test HTML</h1>
+    <h2>大家都要用的就不要用block處理</h2>
+    <h3>block的區塊是提供調整的部位</h3>-->
+    <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flash">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith%} -->
+    <!-- <div class="content">
+        {% block content %}
+        {% endblock content %}         -->
+    <!-- </div>
+</body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Flask模板</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+ <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">我的第一個Flask網站</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Index</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+{% block content %}
+    {% endblock %}
+</body>
+</html>

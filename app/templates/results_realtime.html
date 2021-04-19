@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>the results of normal mode</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="information">
+        <div class="navbar">
+        </div>
+        <div class="content">
+            <h1>Hello, {{user}}. </h1>
+            <h2>Thanks for using our program.</h2>
+            <h3>Your desired walking distance is {{should_walk}}m.</h3>
+            <h3>Equivalently, your  walking distance is {{have_walk}}m.</h3>
+            <h3>{{pri}}</h3>
+            <button type='button' onclick="location.href='http://localhost:5000'">Home page</button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

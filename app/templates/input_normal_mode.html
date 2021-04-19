@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>6-minute walk test</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='inputs.css') }}">
+</head>
+<body>
+    <form method='POST' action="/normal_mode_results"> 
+      <div class="information"></div>
+        <div class="login-box">
+            <h1>Input data</h1>
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <input type="text" name='username' placeholder="Username" >
+            </div>
+            <!-- <div class="textbox">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password">
+            </div> -->
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <input type="number" name='pat_height' placeholder="Height">
+            </div>
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <input type="number" name='pat_weight' placeholder="Weight">
+            </div>
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <input type="number" name='pat_age'placeholder="Age">
+            </div>
+            <button type="submit", class='btn'>Submit</button>
+        </form>
+    
+
+    
+        
+    </div>
+      </body>
+
+
+</body>
+
+</html>

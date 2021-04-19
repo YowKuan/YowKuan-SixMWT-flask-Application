@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>the results of normal mode</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+<body>
+    <div class="information"></div>
+        <div class="navbar">
+        </div>
+        <div class="content">
+            <h1>Hello, {{user}}. </h1>
+            <h2>Thanks for using our program.</h2>
+            <h3>Your desired walking distance is {{should_walk}}m.</h3>
+            <h3>Equivalently, your  walking distance is {{have_walk}}m.</h3>
+            <h3>{{pri}}</h3>
+            
+            <a href="/dashapp/" class="dash-link">
+                <span>Embdedded Plotly Dash</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
+            <!-- <canvas id='Chart_1'>
+                <script src ="../static/Chart.js"></script>
+            </canvas> -->
+
+            <button type='button' onclick="location.href='http://localhost:5000'">Home page</button>
+        </div>
+
+    
+
+
+
+</body>
+
+</html>

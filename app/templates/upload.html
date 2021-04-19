@@ -1,0 +1,29 @@
+
+<html>
+<head>
+    <title>6-minute walk test</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='inputs.css') }}">
+</head>
+<script src ="../static/update.js"></script>
+<body>
+
+<div class="information">
+    <form action="/run_normal_mode" method=post enctype=multipart/form-data>
+        <div class="login-box">
+            <h1>Upload Video</h1>
+            <p><input type=file name=file><br><br>
+            <input type=submit value=Upload class='btn' onclick="progress()">
+        </div>
+            <div class=p>
+            <p id='countdowns'></p>
+            </div>
+            <div id="percentCount" class='percent-count'></div>
+            <div class='progress-bar'>
+                <div class='progress' id='progress'></div>
+            </div>
+    </form>
+</div>
+
+    </body>
+</body>
+</html>

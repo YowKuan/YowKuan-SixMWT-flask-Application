@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Inputs Page{% endblock title %}
+{% block content %}
+
+<div class="information">
+<form action="#" method = 'post' >
+    <form method='post' action='#'>
+        <h1>Welcome to the 6-minute-walk-test system</h1>
+        <p><input type='text' name='username' placeholder='username'></p>
+        <p><input type="text" name="Height" placeholder='Height'></p>
+        <p><input type="text" name="Weight" placeholder='Weight'></p>
+        <p><input type="text" name="Age" placeholder='Age'></p>
+        <p><button type='submit'>Submit</button></p>
+        <p>
+            <input type="button" value="normal mode" onclick="location.href='http://localhost:5000/run_normal_mode'">
+            <input type="button" value="timed mode" onclick="location.href='http://localhost:5000/run_timemode'">
+        </p> 
+
+<!-- </form>
+    <p>Name:</p>
+    <p>Height:</p>
+    <p>Weight:</p>
+    <p>Age:</p>
+    <p><input type='submit' value = 'submit'/></p> -->
+</form>
+</div>
+
+{% endblock %}
