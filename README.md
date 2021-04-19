@@ -7,7 +7,7 @@ Example video showing tracking of a Six-Minute Walking Test Patient:
 <p align="center"><img src="./app/yolov4_deepsort/data/helpers/6mwt_demo.gif"\></p>
 
 ## Deploy with Docker
-    ```docker
+    ```sh
     docker build -t [image name] .
     docker run -d --name [container name] -p [host port:container port] [image name]
     ```
