@@ -1,10 +1,10 @@
 # yolov4-deepsort
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
-The project is an website designed for walking distance and speed analysis of patients performing "Six Minute Walking Test". The web technical stack include Flask, PostgreSQL, Docker. This Object tracking model is implemented with YOLOv4, DeepSort, and TensorFlow. 
+The project is an website designed for walking distance and speed analysis of patients performing "Six Minute Walking Test". The web technical stack include Flask, PostgreSQL, Docker and Plotly. This Object tracking model is implemented with YOLOv4, DeepSort, and TensorFlow. 
 
 Example video showing tracking of a Six-Minute Walking Test Patient:
-<p align="center"><img src="6MWT_main/app/yolov4_deepsort/data/helpers/6mwt_demo.gif"\></p>
+<p align="center"><img src="./app/yolov4_deepsort/data/helpers/6mwt_demo.gif"\></p>
 
 ## Deploy with Docker
     ```docker
